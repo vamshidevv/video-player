@@ -8,19 +8,26 @@ import FloatingVideoPlayer from "./Components/FloatingVideoPlayer ";
 import Footer from "./Components/Footer";
 import NavBar from "./Components/NavBar";
 
-
 const App = () => {
   const [selectedVideo, setSelectedVideo] = useState(null);
+  // const [isPlay, setIsPlay] = useState(false);
 
   const handleVideoSelect = (video) => {
-    setSelectedVideo(video.src);
+    setTimeout(() => {
+      setSelectedVideo(video.src);
+    }, 5000);
     window.open(`/play/${video.id}`, "_blank");
   };
 
-  const handleVideoClose = () => {
-    console.log("Close btn Clicked")
+  const handleVideoClose = () => { 
+    console.log("Close btn Clicked");
     setSelectedVideo(null);
   };
+
+  // const handleVideoPlay = (play) => {
+  //   setIsPlay(play);
+  //   console.log("play :", play);
+  // };
 
   return (
     <Router>
@@ -37,7 +44,7 @@ const App = () => {
             />
             <Route
               path="/play/:id"
-              element={<VideoPlayerPage videos={selectedVideo} />}
+              element={<VideoPlayerPage videoSrc={selectedVideo} />}
             />
           </Routes>
         </main>
@@ -45,13 +52,16 @@ const App = () => {
           <p>@Copyrights-2024</p>
         </footer> */}
 
-        <Footer/>
-        {selectedVideo && (
-          <FloatingVideoPlayer
-            videoSrc={selectedVideo}
-            onClose={handleVideoClose}
-          />
-        )}
+        <Footer />
+
+        {selectedVideo &&
+          (console.log("Rendering FloatingVideoPlayer"),
+          (
+            <FloatingVideoPlayer
+              videoSrc={selectedVideo}
+              onClose={handleVideoClose}
+            />
+          ))}
       </div>
     </Router>
   );

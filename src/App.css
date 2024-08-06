@@ -3,6 +3,7 @@ html,
 #root {
   height: 100%;
   margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
 }
@@ -40,8 +41,8 @@ html,
 }
 
 .content {
-  padding: 20px;
-  background-color: #ffffff;
+  /* padding: 20px; */
+  background-color: #f4f4f9;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -127,4 +128,11 @@ html,
 
 .close-btn:hover {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 431px) {
+  .link {
+    /* border: 1px solid blue !important; */
+    width: 340px !important;
+  }
 }
