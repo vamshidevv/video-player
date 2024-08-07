@@ -1,0 +1,32 @@
+{
+  "content": [
+    { "id": 1, "title": "Video 1", "src": "/assets/videos/Demo.mp4" },
+    {
+      "id": 2,
+      "title": "Video 2",
+      "src": "/assets/videos/5082025-uhd_4096_2160_25fps.mp4"
+    },
+    {
+      "id": 3,
+      "title": "Video 3",
+      "src": "/assets/videos/3252145-uhd_3840_2160_25fps (1).mp4"
+    },
+    {
+      "id": 4,
+      "title": "Video 4",
+      "src": "/assets/videos/4549682-hd_1920_1080_30fps.mp4"
+    },
+    {
+      "id": 5,
+      "title": "Video 5",
+      "src": "/assets/videos/Anchor Green Screen.mp4"
+    },
+    { "id": 6, "title": "Video 6", "src": "/assets/videos/nature.mp4" },
+    { "id": 7, "title": "Video 7", "src": "/assets/videos/tree.mp4" },
+    { "id": 8, "title": "Video 8", "src": "/assets/videos/bell.mp4" },
+    { "id": 9, "title": "Video 9", "src": "/assets/videos/guitar.mp4" },
+    { "id": 10, "title": "Video 10", "src": "/assets/videos/beach.mp4" },
+    { "id": 11, "title": "Video 11", "src": "/assets/videos/boat.mp4" },
+    { "id": 12, "title": "Video 12", "src": "/assets/videos/saxophone.mp4" }
+  ]
+}
