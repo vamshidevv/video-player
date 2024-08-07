@@ -1,7 +1,8 @@
 import React from "react";
 import Draggable from "react-draggable";
-// import { ResizableBox } from "react-resizable";
-// import "react-resizable/css/styles.css";
+// import { Resizable, ResizableBox } from "react-resizable";
+import "react-resizable/css/styles.css";
+
 import CloseIcon from "@mui/icons-material/Close";
 
 const FloatingVideoPlayer = ({ videoSrc, onClose }) => {
@@ -9,6 +10,9 @@ const FloatingVideoPlayer = ({ videoSrc, onClose }) => {
 
   return (
     <Draggable>
+      {/* <ResizableBox
+        style={{ border: "1px solid red" }}
+      > */}
       <div className="floating-video-player">
         <video src={videoSrc} controls autoPlay width="100%" height="100%" />
 
@@ -16,6 +20,7 @@ const FloatingVideoPlayer = ({ videoSrc, onClose }) => {
           <CloseIcon />
         </button>
       </div>
+      {/* </ResizableBox> */}
     </Draggable>
   );
 };

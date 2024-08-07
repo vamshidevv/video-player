@@ -128,11 +128,18 @@ html,
 
 .close-btn:hover {
   background-color: rgba(0, 0, 0, 0.1);
+  
 }
+
+/* media query for videoplayerpage */
 
 @media screen and (max-width: 431px) {
   .link {
     /* border: 1px solid blue !important; */
     width: 340px !important;
+  }
+  .related-video {
+    width: 340px !important;
+    object-fit: cover !important;
   }
 }
